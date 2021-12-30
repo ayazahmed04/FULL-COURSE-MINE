@@ -1,0 +1,28 @@
+<!-- combining loops in the javascript -->
+<body>
+   
+<script>
+                        // Complex Boolean Situation
+   // Can you?
+      // Identify *where* you need decision points
+      
+      let grades = [2,5, , ,9,8, , 8];
+      let sum = 0;
+      let count = 0;//it's hoing to keep track to good count
+      if (grades.length>0) {
+         for (let index = 0; index < grades.length; index++) {
+            if (grades[index] != undefined){
+             sum += grades[index]; // do i need the what i add the if statement
+             count = count +1;}
+         }
+         // Do we really want to divide by the size of the array?
+         // error is it there
+         // document.write(sum/grades.length); /// Now run the code with the help of the if statement if grades .length != undefined;
+         document.write(sum/count)
+      }
+      else {
+         document.write("Empty Array");
+      }
+      console.log("this is the javascrip");
+</script>
+</body>

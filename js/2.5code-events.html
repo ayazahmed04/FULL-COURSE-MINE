@@ -1,0 +1,38 @@
+<head>
+   <style>
+button{
+   width: 7rem;
+   color: #000;
+   background-color: #0ff1f1;
+   background: #0ff1f1;
+   font-family: 'Courier New', Courier, monospace;
+   /* font-family: sans-serif; */
+   font-weight: bold;
+   
+}
+p{
+   width:fit-content;
+   border: 2px solid #000;
+}
+#stuff{
+   background-color: rgba(.2, .3, .34, 0.4);
+}
+   </style>
+<body>
+<h1>Modifying the DOM</h1>   
+<button onclick="document.getElementById('stuff').innerHTML = 'Clicked on the first button';">First</button>
+<button onclick="document.getElementById('stuff').innerHTML = 'You clicked on the Second button';">Second</button>
+
+<p>This code shouldn't changes</p>
+<p id="stuff">This will change.</p>
+<p>This shouldn't Change</p>
+<script>
+                           // EXAMPLES
+   // Events - Modify the DOM
+   // Events - Change Style
+
+
+                  
+</script>
+</body>
+</head>

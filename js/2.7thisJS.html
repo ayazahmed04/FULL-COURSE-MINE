@@ -1,0 +1,36 @@
+<!-- in this example i used this keyword for targting the function of the a specific to this -->
+<a onclick="console.log('this.href')" href="#">Home</a>
+
+<img src="../../web/img/love.jpg" alt="My Heroes" onclick="console.log(this.alt)"  onmouseleave="display()">
+<div onclick="console.log(this.innerHTML)">Hi there, checking out the div</div>
+
+<img src="../../web/img/logo.jpg" alt="This is Logo" id="ID-1" onclick="displayId(this)">
+<!-- this times we used the function of the displayId() -->
+
+<div onclick="displayId(this)" id="ID-2">This is the function invoke by the div</div>
+<script>
+               // Referring to Elements 
+   // A key to smart programming is using functions
+   // A common roadblock is figuring out how to set up functions for reuse
+// this // How to I avoid writing a different function for every different elements?
+// How can  the function know which one I want to use
+// this is the reason "this "  keyword is come in
+
+
+                     // this 
+   // "this" is a keyword that allows an element to reference itself
+   // Allows you to access an element's info
+      // Without "this"  it would be difficult for the functions to know what data to use 
+   //  "this" is also used outside functions
+
+function displayId(element){
+   console.log(element.id);
+  document.getElementById('ID-2').innerHTML = "this is changed"; 
+
+}
+const display  = () => {
+   document.getElementById('ID-2').innerHTML = "If you leave good people you would be destroy"; 
+   console.log(document.getAnimations('ID-2').innerHTML = "this is function after");
+   
+}
+</script>

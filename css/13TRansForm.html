@@ -1,0 +1,80 @@
+                    <!-- Transform  -->
+<!-- 2D Transform OPtions -->
+    <!-- Options -->
+         <!-- translate(), rotate(), scale(), skew(), matrix() -->
+
+
+         <!-- transform:translte(x,y); -->
+             <!-- move x pixels to the left/right and y pixel up/down -->
+    <!-- transform:translate(100(x),75(y); -->
+    
+                        <!-- Rotate -->
+    <!-- transform:rotate(deg); -->
+        <!-- Rotate/"spin" the element a certain number of degress -->
+        <!--  e.g., transform: rotate(30deg) -->
+
+
+
+                        <!-- SCale -->
+    <!-- transform: scale(widht, height); -->
+        <!-- > Change the width and height of the element  -->
+        <!-- transform:scale(2(width), 3(height)) -->
+
+                        <!-- SKEW -->
+    <!-- transform:skew(x-angle, y-angle) -->
+
+
+                    <!-- 3D rotate -->
+    <!-- You can rotate along the x, y or z dimension alonng a giver degree -->
+    <!-- transform:rotate(x,y,z) -->
+    <style>
+        div{
+            margin: 2rem;
+        }
+        div:first-child{
+            background-color: aqua;
+            /* transform: skew(30deg,15deg); */
+            /* it rotates to the both x and y axis */
+            transform: rotate3d(23deg,34deg, 77deg);
+            /* transform: scale(2,3); */
+            /* transform: rotate(23deg); */
+            /* transform: translate(100, 75); */
+    width: fit-content;
+    
+}
+div:hover{
+    transform: skew(40deg);
+    rotate: 43deg       ;
+    transition-delay: 2000ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+section {
+    background-color: royalblue;
+    width: 200px;
+    height: 200px;
+    margin: 40px;
+
+    /* transition-property:width, background-color; 
+    transition-duration: 2s; */
+    transition-property: all;
+}
+section:hover{
+    width: 300px;
+    transition-duration: 1s ;
+    /* transition-timing-function: ease-in-out; */
+    background-color: rgba(43, 57, 97, 0.705);
+}
+    </style>
+
+    <div>   
+        <p>now</p>
+    </div>
+<div class="header">
+    This is the header classs and it can be select be using the jS
+
+</div>
+
+<section id="animation">
+    
+</section>

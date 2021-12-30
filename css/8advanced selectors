@@ -1,0 +1,84 @@
+     Styling Specific Objects
+- We have focused on type seclector
+- What if you don't wnt ot style all of the links, just some?
+   =>>Or just some of the lists
+- CSS gives you a lot of option
+
+
+                CSS selector 
+    => some Selector folllow the DOM
+    => Descendant selector (nav a)
+        > styles all of the anchor links inside a nav tag
+    => Child selector (nav>a)
+        > more contraining The anchor elements must be a child of the nav, no intermediate tags,  e.g., paragraph
+    => Adjacent Sibling(hl + ol)
+        > elements must be at same level and follow each other 
+    => All Siblings (h1~ol)
+
+                        Id selector
+    #id selector 
+        > used ot identify a single elements in the DOM 
+        > Was used extensively for <div id="header">, <div id='gooter'> , etc.
+        There is a small movement ot move the use of id OUt of CSS 
+        
+
+                    >class selector
+    // used to identify an element in the DOM that is part of a special class of items
+    // Thinks of thumbnails images, all of the links that are in the navigation , your social media images, etc....
+
+
+                    /* difference b/w class and id*/
+    .(period ) is for classess  & #(pound) for id 
+    >classes can be used multiple times 
+    ?id shoul be unique
+    
+
+
+
+                /* Narrowing the classess*/
+    => As you get more advanced pages you will want ot narrow the scope of the action
+     > p.main => paragraph usion main class 
+     > header img.special => Paragraph inside header that use special class 
+                
+
+                /*Expanding the Scope*/
+    => You can combine elements with a comma  - p, h1, #main,.special {... rules to applly to all of them...}
+      > the best way to not changing the element is to be used the !important
+      >!important
+
+
+                /* More  Attribute Selector*/
+                universal Selector
+    -* applies styling to every element on the page 
+    - Ackk!! Try this!
+
+                /*Attribute Selectors */
+    - a[href='info.html'] 
+       >> this is used to select the tag whose attribute is href=info.html
+     => pseudo-classes 
+     => pseudo-Elements 
+
+                => attribute    SELECTOR 
+    > You may want to search the DOM for certain elements that have an attribute you are looking for 
+            > All the images that use gif files....
+            > All of the images that have empty alt text....
+            >All of the links that goes to the government sites
+            
+
+
+            /* Using Operators*/
+    => Operators can be used to find those attribute values you are looking for 
+            ^ :match the begining element exactly
+                a[href^='http://yazi']
+    => $ : match the end exactlly
+           img[src$='.png'] >> apply to all png images 
+    => :wildcard
+            a[href*='yazi']
+                >> if you see any "yazi" in the href apply the selector in it 
+                
+
+
+
+[name~="value"]  => Selects all elements contains string value sepreted by white spaces 
+
+[title*="world"]; => this willl match with both of the ppreceding element 

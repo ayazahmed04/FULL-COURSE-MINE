@@ -1,0 +1,75 @@
+
+/* Accessiblity are  important Peoples Know that this are the links */
+
+
+/* 
+                            <!-- states
+     Some links are blue, some are purple, etc. why???? 
+        <!-- -a:link  a normal visited link -->
+        <!-- -a:visited  has been visited -->
+        <!-- -a:hover: activated by the help of the mouse -->
+        <!-- -a:focus  activated with the keyboard -->
+        <!-- a:active   is being clicked -->
+
+
+        <!-- precedence of Rules    -->
+        <!-- a:hove  MUST come after a:link -->
+        <!-- a:visited  and a:active  MUST come after a:hover -->
+        
+        
+        
+        <!-- some people when visited the link it's colour will change to the blue and the purple because they want  to  apply the pseudo cal -->
+        
+
+                    Precedence Of Rules
+       a:hover MUST come after a:link
+       a:visited and a:active  Must come after a:hover */
+
+
+
+                    /* styling Lists  */
+    /* Number of properties beyond font, margin etc. */
+    /* 1- list-style-type 
+     2 - list-style-image  : it adds the img in the list style
+     e.g.,- list-style-img: square url('icon.gif');
+     3 - list-style-position 
+     4 - list-style*/
+
+a{
+    font-weight: bold;
+    color: #ffffff;
+    background: #0006CC;
+    width: 200px;
+    text-align: center;
+    padding: 4px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: block;
+}
+
+
+a:hover{
+    background: #B3B3B3;
+    color: #0006CC;
+}
+
+a:focus{
+    background: #b3b3b3;
+    color: #0006CC;
+}
+
+a:active{
+    border: 4px inset #ff0000;
+}
+
+
+.notalall{
+    /* chrome webkit use in this way  */
+    -webkit-border-radius: 26%;
+    /* mozilla   Prefixes */
+    -moz-barder-radius:122%;
+    /* operas  prefix  */
+    -o-border-radius: 23%;
+    /* internet Explorer Prefixes */
+    -ms-border-radius: 10%;
+}

@@ -1,0 +1,19 @@
+<body onload="loadFruits()">
+<button onclick="myFunction()">Add Your Favoritle</button>
+
+<p id="fruits"></p>
+   
+<script>
+   let fruits = ["Banana", "Orange", "Apple", "Mango"];
+   const loadFruits=()=>{
+      document.getElementById('fruits').innerHTML = fruits[2];
+   }
+   const myFunction = () =>{
+      let fruit = prompt("what is your favorite fruits");
+      fruits[fruits.length] = fruit;
+      document.getElementById("fruits").innerHTML = fruits;
+      
+   }
+   
+</script>
+</body>

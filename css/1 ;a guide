@@ -1,0 +1,116 @@
+@REM design your larger project in the paper first
+
+// => Succeding in this class
+
+- IN a perfect world you would code with a friend... so use the message boards
+- never spent 15 minutes on the one problem  ? move on 
+- looking things up on your own
+- practise, practise , practise
+
+
+// => browser default styling
+=> the same html file is look different when  viewed in different browsers.
+    - some tags are supported but some aren't 
+    - Browser may have different default  styles
+    - IN general, defaults looks are very plain
+
+
+// => Adding styles
+    -there are two types of adding styles in your html
+    <h1 styles = "color:blue">style heading</h1>
+
+
+// => Rule syntax
+ -Brackets and semicoloons are very important
+ -This is where a good editor can make a BiG difference
+ 
+// => use !important for the best css style whose want not to change
+ - color names(blue,red,yellow, etc.) work, 
+@REM  best type of uses of the colour
+ > #0000FF, #FF0000, #FFFF00
+@REM best use of colour 
+rgb(0,0,1), 
+@REM another used of colour
+rgba(1,1,3,0.3)
+
+@REM color accessiblity
+the color you used must be those colour who are able to see the color blind people
+
+
+
+@REM what is color contrast
+ - You intuitively know when something has poor contrast 
+ - there are tools that quantify the contrast  between text and its background
+ -  http://wave.webain.org/
+ -  http://webain.org/resources/contrastchecker/
+
+
+
+
+
+@REM 1 font is written without symbol and the two text are written in the double blockquete
+ font-family: ardena, "Courier New" 
+
+@REM  don't use the browser default heading style and text by classes
+        if the browser doesn't support than it go to default browser
+        - some fonts arn't user friendly , so use most time use the font sans-serif
+
+
+@REM custom fonts 
+  - To expand beyond "web-safe" fonts use @fonts-face 
+            @REM best way to use the font
+    @font-face{
+        font-family: mySpecialFont;
+        src: url('Colleen.ttf');
+    }
+    h1{
+        font-family: mySpecialFont;
+    }
+
+@REM font variant:
+         - normal @REM it makes the font normal
+         - small-caps @rem it makes the font in the capital letter but small font doesn't change the capital letter in it's own position
+
+@REM font-size
+    @rem  => this is the beginning of our disscussion on sizes...
+    Options
+        -xx-small, x-small, small, smaller
+        -medium
+        -larger, x-large, xx-large, larger
+@REM very few uses this types of fonts
+
+    @REM font pixels are the most people used 
+
+@REM percentage type of font is very usefull for making the web
+    @REM it is used as 110% , font-size:145%
+
+
+
+@REM color and background-color
+    - The color attribute is the color of the foreground.
+    - the background-color is the color of the background
+@REM  e.g.,
+    h1,span, .heading{
+        color:#0000FF;  /* Blue */
+        background-color:#B3B3B3;  /*Grey*/
+    }
+
+@REM text-align
+        // text-align => 
+            -left
+            -right
+            center
+            -justify @rem used to covers the much spces are available
+-justify is usefull is th best way of the text height
+
+@REM line-height;
+    @rem => it doesn't effect the font 
+    @rem => Adjusts the space b/w the line of text
+h1,span{
+    line-height: 50%;
+    line-height:150%;
+    line-height: 200%;
+    line-height: 110%;
+}
+
+

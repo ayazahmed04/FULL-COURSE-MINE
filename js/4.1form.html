@@ -1,0 +1,62 @@
+                        <!-- <!-- Attributes -->
+ <!-- Name
+         Almost all input types should have a name attributes
+         the name attribute is assigned whatever value is input
+   id 
+         USed for labels
+         Used for by JavaScript -->
+   
+                     <!-- Additinal Attributes -->
+<!-- value 
+   button: text inside the button 
+   textfield: provides a default value
+   => if not changed will be the value passed to the server
+PlaceHolder
+    => provides a suggestion 
+    => Not an "official" value
+ -->
+ <!-- no validate is used to remove all the required things that browser tends to be required -->
+<form  >
+   <!-- <form novalidate> -->
+   <fieldset>
+      <legend>Personal Information:</legend>
+      <label for="text">pattern 
+         <input type="text" name="text " id="text" pattern="[0-9]{5}">
+         <input type="text" pattern="[0-9]{13-16}">
+         <input type="text" pattern="[a-zA-Z]+">
+         
+      </label>
+      <!-- pattern="[0-9]{13-16}" -->
+      <!-- pattern="[a-zA-Z]+" -->
+
+   <label for="name">Name:</label>
+   <input type="name" id="name" placeholder="name"> <br>
+
+   <label for="email">Email:</label>
+   <input type="email" name="email" id="email" placeholder="type here your email" > <br>
+
+   <label for="password">Password:</label>
+   <input type="password" name="password" id="password" placeholder="Input your Password" required> <br>
+
+   <label><input type="radio" name="male" id="male">Male</label> <br>
+   <label><input type="radio" name="Female" id="female" placeholder="female">Female </label> <br>
+      
+   <label><input type="checkbox" name="contactEmail" id="contactEmail">Contact via email </label> <br>
+   
+   <label><input type="checkbox" name="contactPhone" id="contactPhone">Contact via Phone </label> <br>
+   
+   <label>Number:<input type="number" name="number" id="number"></label> <br>
+
+   <input type="range" name="range" id="range"> <br>
+
+   <label><input type="color" name="color" id="color"></label> <br>
+
+   <label>Date: <input type="date" name="date" id="date"></label> <br>
+
+   <label>URL: <input type="url" name="url" id="url"></label> <br>
+
+   <input type="submit" value="Submit Now">
+   
+
+   </fieldset>
+</form>

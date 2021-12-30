@@ -1,0 +1,49 @@
+<!-- overflow -->
+    <!-- visible:can cause to show text on the top of the other text  -->
+    <!-- hidden: hides anything that goes beyond bounding box
+        --this can cause problems since i fthe user increases font size, they may not be able to see content -->
+    <!-- scroll: Gives horizantal and verical scrollbar -->
+    <!-- auto: Adds scrolbar as needed -->
+
+<!-- Other display value -->
+        <!-- -Table  , -Grid   &  Flexbox -->
+
+<!-- how table display work -->
+    <!-- -Sometimes you want to have table-like layout without using table structure, use display:table along with   display:table-cell for elements -->
+
+<!-- visiblity -->
+        <!-- option includes
+                    -visible , -hidden, collapse(only for the table element) -->
+
+<style>
+    /* body{display: table; */
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* } */
+    .display{
+        border: 2px solid khaki;
+        height: 100px ;
+        width: 50%;
+        display: inline;
+        display: inline-block;
+    }
+
+    .New-div{
+        width: 30%;
+        display: table-cell !important;
+        background-color: #208fb1;
+        /* display: inline-block; */
+        /* this will make all the div to the inline element */
+        /* float: left; */
+        /* float will make the div werse when we resize it */
+        /* overflow: scroll; */
+        visibility: hidden;
+    }
+    #div1{
+        /* display: none; */
+        height: 500px;
+        visibility: hidden;
+    }
+</style>
+
+<div id="div1" class="display">This is the div </div>
+<div class="display">This is the div </div>

@@ -1,0 +1,91 @@
+<!-- Display is Key at Layout -->
+    <!-- Every Element is a box -->
+    <!-- Display affects the layout of neighboring element -->
+
+
+<!-- Display common values Common Values  -->
+    <!-- inline: sits next ot other elements -->
+    <!-- takes up "just enough" width and height -->
+    <!-- block: forces a line break -->
+    <!-- =default: take up all horizantal width just enough height -->
+    <!-- rules can set height and width -->
+<!-- Inline-block: -->
+            <!-- -same as inline, but accepts height and width  -->
+
+<!-- display:none; -->
+        <!-- removed element from the page -->
+
+
+
+
+
+    <!-- EXAMPLES -->
+<style>
+    /* span are the inline element in the css */
+    span{
+        height: 50px;
+        width: 75px;
+        background: #00ffff;
+        /* display: Try block and inline-block */
+        display: block;
+        float:left;
+        /* float */
+    }
+    div{
+        height: 100px;
+        width: 45%;
+        background-color: #0f0;
+        /* display: ; */
+        display: inline;
+        float: right;
+        clear: both;
+        /* clear:both; will remove the effect of the float */
+        /* float:; */
+    }
+    p{
+        background: #ff00ff;
+        width: 200px;
+        height: 100px;
+        clear:none;
+        clear: none; /*clear both will remove the effect of the float in out element from the right or left*/
+        /* display:f ; */
+        /* font-display: ; */
+        /* display: none; */
+    }
+    
+
+
+    /* float & clear */
+    p{
+        clear: both;
+        /* this will clear the both the  */
+    }
+
+    
+    /* block inline inline-block none */
+    /* div p h  form  starts in the new line height/widht => this is the block   */
+
+    /* inline => a img span  */
+    /* not full width height/width not apply */
+
+
+    /* inline_block */
+    /* full of inline prop  but apply  height / widht */
+</style>
+
+
+
+
+
+
+<span>span A</span>
+<span>span B</span>
+<span>Span C</span>
+<hr>
+<div>Div 1</div>
+<div>Div 2</div>
+<div>Div 3</div>
+<hr>
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+<p>Paragraph 3</p>

@@ -1,0 +1,79 @@
+<body>
+   <form action="action.php">
+            <fieldset>
+         <legend>Email comparison</legend>
+         <label>Preferred email address: <input type="email" name="email1" id="emailFirst" required
+               value="me@me.com"></label>
+         <br>
+         <label>Repeat Email Address: <input type="email" name="email2" id="emailSecond" required
+          onchange="return check();"     ></label>
+         <br>
+
+         
+         <!-- <label>New Password: <input type="password" name="password" id="passwordNew" required ></label>
+         <label>Confirm Password: <input type="password" name="password" id="passwordCheck" required  ></label> -->
+         
+         <input type="submit" value="Confirm Email" onclick="return check();" >
+
+         
+      </fieldset>
+   </form>
+   <script>
+      // Validating Input
+      // what?
+      // Compate that two emails are the same
+      // How?
+      // HTML: email input type and required attributte
+      // JavaScript
+      // when?
+      // As soon as the second email is entered
+
+
+      // Validating at Input Time
+      // which event?
+      // oninput and onchange are both options 
+      // onchange  is the best method to check the validaion because it works only at the time of submit 
+      // What should we compare?
+      // Is it the inputs, or some attribute of the inputs?
+      // what is the output
+      // HOw do we communicate the result of the comparison
+
+                                 // Hmmm.....
+   // We check, but it doesn't have "teeth"
+   // How can we stop the form submission
+   
+                  // Validating INput
+// what?
+   // compare that two emails are the same
+// how?
+   // HTML:email input type and required attribute
+   // JavaScript
+// When?
+   // As soon as the 2nd email is entered
+   // and on the submit
+
+
+      function check() {
+         let email1 = document.getElementById('emailFirst');
+         let email2 = document.getElementById('emailSecond');
+
+         if (email1.value != email2.value) {
+            alert("the two emails must be matched")
+            return false;
+                           //return
+// Function can return values (numbers, String, boolean, Objects, Arrays...)
+// We can use a boolean hunt value to stop the function
+
+         }
+      }
+      const checkedd = () => {
+         let pass1 = document.getElementById('passwordNew');
+         let pass2 = document.getElementById('passwordCheck');
+         
+         if (pass1.value != pass2.value){
+            alert('two password will be matched');
+            return false;
+         }
+      }
+   </script>
+</body>

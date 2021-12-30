@@ -1,0 +1,139 @@
+            <!-- Review  -->
+    <!-- Positionnig elements is key to achieving desired layouts -->
+    <!-- > proper planning will make this easier -->
+    
+
+
+                <!-- Z-index  -->
+    <!--  Multiple elements may be placed in the same position. -->
+    <!-- z-index is a numeric value, positive or  negative that dictates stacking order -->
+
+
+
+
+                    <!-- Positioning -->   
+    <!-- the four transition properties are
+        >static > relative >absolut & >fixed -->
+
+    <!-- Position are modified by the properties top, bottom, left, right -->
+
+
+                <!-- Static (normal, default ) -normal-flow   -->
+    <!-- Default value for elements -->
+    <!-- (default) -->
+    <!-- place in the next availabe position -->
+    <!-- Not affected by the top, bottom, left and right properties  
+        static not have these properties in the CSS
+         top, bottom, left , right -->
+
+
+                <!-- Relative -->
+    <!--  -->
+    <!-- Positioned "relative to itself" -->
+    <!-- let's move from -->
+    <!-- take the static position, but add offsets -->
+    <!-- The new positioning doesn't affect any other element. It is possible to move an element and leave a big hole where it would have been -->
+    <!-- Relative Positioned elements are often used as container blocks for other elements -->
+    <!-- in this add number to moves things e.g., top, bottom, left and right -->
+
+
+                <!-- Absolute -->
+    <!-- Elements is removed from the document flow and positioned relative to it's nearest ancestor(or the root) -->
+    <!-- Others elements behave as if elements doesn't exist -->
+    <!-- can end up on top of another element -->
+    <!-- it start from it's nearest parrent position  -->
+
+                <!-- `Fixed -->
+    <!-- this is the fixed position is used to make the browser thing of the pop-up boxes -->
+    <!-- A navigtion bar that is always set into the top -->
+
+<style>
+    .cancel_div{width: 400px; height: 300px;
+        border: 2px solid #ff0000;
+        position: relative;
+    }
+    .cancel_div {
+        border: 2px inset #000000;
+        width: 50%;
+        /* position: static; */
+
+        position: relative;
+
+        position: absolute;
+        /* Because i asked 100px on the top and 59 px from the left */
+
+        position: fixed;
+
+                        /* Z-index  */
+/*  Multiple elements may be placed in the same position. */
+/* z-index is a numeric value, positive or  negative that dictates stacking order */
+        
+        
+        
+        
+        
+        top: 100px;
+        /* left: 100px; */
+        left: 59px;
+    }
+*{margin: 0; padding: 0%;}    
+
+
+#parent{
+    border: 2px solid red;
+    padding: 20px;
+    width: 50%;
+    margin: 100px;
+    position: relative;
+}
+#one1{  
+    background-color: green;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+#one2{
+    display: inline-block;
+    background-color: cadetblue;
+    width: 100px;
+    height: 100px;
+    position: relative;    
+    /* relative makes apni space left behind */
+    /* relative start from it's on position but absolute start from it's parent position */
+    /* absolute position doesn't has to be changed  */
+    position: absolute;
+    /* it absulute doesn't find any parent it will start taking position from the body */
+    /* it's calc is started from position element */
+    position: fixed;
+    /* top: 0px; */
+    /* the #parent is the position is the position element and it's start from  the 0 element now it's start from the element and it's index is started from the element  */
+    right: 0px;
+    /* in relative  and absolute element leaves it's space behind  */
+    bottom: 0px;
+    
+}
+#one3{
+    display: inline-block;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    
+}
+body{
+    height: 100em;
+}
+
+</style>
+    <div id="parent">
+        <div id="one1"></div>
+        <div id="one2"></div>
+
+        <div id="one3"></div>
+    </div>
+
+
+    <!-- <div class="align-selt center" >
+        <p>A</p>
+        <p>B</p>
+    </div>
+    <div class="font align-self align-self2"><p>C</p></div> 

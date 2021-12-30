@@ -1,0 +1,53 @@
+<head>
+   <style>
+.closed{
+   display: none;
+}
+.open{
+   display: block;
+   color: #00ccee;
+}
+button {
+   width: 8rem;
+   background-color: #00ccee;
+
+}
+   </style>
+</head>
+
+
+<body>
+<h1>Changing the style</h1>
+<p>JavaScript can change the style of an HTML element.</p>
+<button type="button" onclick="openMe()">Open!</button>
+<button type="button" onclick="closeMe()">Close!</button>
+<p id="demo">
+   Extra details..... You can open and close this paragraph using the button above 
+</p>
+
+
+   <script>
+function closeMe() {
+   // find the elements
+   x = document.getElementById("demo");
+   // Option one change the style attribute directly
+   // x.style.display = "none";
+   // option 2 : change the class
+   x.className="closed";
+}
+
+function openMe() {
+   x = document.getElementById('demo');
+
+   // this is used to chnage the display
+   // x.style.display = "block";
+
+   // this is used to add the class in the browser
+   x.className="open";
+}
+   </script>
+</body>
+
+                  <!-- Review -->
+ <!-- stop and Code -->
+ <!--  -->

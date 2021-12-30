@@ -1,0 +1,60 @@
+                                <!-- Height & Width -->
+    <!-- 1 => the default width of inline elements is the content -->
+    <!-- Elements that arn't inline can take  width and height properties - we know this -->
+
+                                <!-- Border -->
+    <!-- Any elements can have a border around it -->
+    <!-- border property specifies style, width, and color -->
+    <!-- The border style are the only one which is defined -->
+                                <!-- e.g., border: 2px inset #0000FF; -->
+
+                                <!-- Margin -->
+    <!-- Margin is additional space outside your border-b/w you and neighbour -->
+    <!-- positve Margin: => Elements moves right/down -->
+    <!-- negative Margin => elements moves left or upward -->
+
+                                <!-- Padding -->
+    <!-- padding is the initial space b/w the element and it's border -->
+        <!-- Positive padding: border moves outward from element -->
+        <!-- Negative padding : border moves over the element  -->
+
+    <!-- Margin and  Padding -->
+     <!-- Neither takes colour(transparent) -->
+     <!-- Can also be defined in 1-4 values like border -->
+
+
+                                <!-- Centering an Element -->
+    <!-- To horizantally center an element use: -->
+        <!-- => margin: 0 auto; -->
+        <!-- BUT -->
+            <!-- The element must display block -->
+            <!-- The Element must not float -->
+            <!-- The Element must not have a fixed or absolut position -->
+            <!-- the element must have a width that isn't auto -->
+
+<!-- this is the way of centering the element by the margin auto its for width -->
+<div style="background-color: aqua; margin: 0 auto; width: fit-content;">this is center</div>
+
+<!-- this is the way of centering the element for top/bottom  -->
+<p style="color: aqua; background-color: #0000ff; height: 23px; margin: auto 0;">This center by the margin auto</p>
+
+<!-- this is the way of center to the all side -->
+<div style="color: #0fff; background-color: #aeaeae; line-height: 13px; width: fit-content; margin: auto; height: fit-content;">This is all sides are the center</div>
+
+
+                                <!-- Box sizing                -->
+        <!-- option
+        => content-box:default additve
+        => border-box: width takes content, padding, and border
+        -->
+
+                                <!-- Measurments -->
+        <!-- Absolute - set to a specific vlue
+        => px, mm, cm, pc,......
+        -->
+        <!-- Fluid-sets size relative to surrounding elements
+        => %, vw(viewport-width), vh(viewport-height)
+        => em(for font): 1em is current size, .75 is 75% of the current size
+        => rem(for font): 1em is current size of root element
+        -->
+

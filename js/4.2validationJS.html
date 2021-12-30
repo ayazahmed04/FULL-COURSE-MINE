@@ -1,0 +1,54 @@
+<script>
+   // use "novalidate" to remove all the required attributes in the form
+                     // what to validate
+// the type of input
+   // You want a number instead of a string...
+// the format of the input
+   // Is it a valid email address or URL?
+   // Does the phone number have spaces?
+// The value of the input 
+   // Should it be the required input
+   // Do the email values match?
+
+                  // How do you want to validate
+// Use new HTML5 input types
+   // 1> email, 2> number , 3> url
+// Use HTML5 attributes
+   // required, placeholder , min , max
+// Use javaScript functions 
+   // Write custom code to validate
+
+                  // Input Types 
+// the input types require that the browser validate the format of the input
+// When supported, it wil halt the submit process for non-valid input
+// The first non-valid input is put into focus
+// If not supported, the input type is just text 
+
+
+               // input Arrtributes 
+// required
+   // Halts the submit process if any of the required elements are empty
+   // Can cause issues when you are developing yout code, so sometimes paired with the form attribute novalidate
+
+                           // Pattern
+   // Works with input type= text and requires the input hava a specific form
+   // pattern will be best with placeholder & supporting text
+   // http://html5pattern.com/
+
+                        // limiting Numbers
+   // min, max and step can place limits on numbers input
+   // the range attribute also has a max and min , just a different look
+
+                        // pattern vs Max/Min
+   // what if you want a zip code?
+   // what do you want to check?
+      //  that the input is five digit
+   // How do you want to check it?
+      // Use input = number + min and max
+      // Use input = text + pattern
+
+
+                           // Validation with JavaScript
+   // There isn't always a grarantee that the browser will support the input type or pattern attribute
+   // It is possible to add extra validation using the Events and custom JavaScript
+</script>

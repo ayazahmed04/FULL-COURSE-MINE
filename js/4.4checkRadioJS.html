@@ -1,0 +1,70 @@
+<div class="new">This is the new class in the Js</div>
+
+
+
+<form> 
+   <fieldset>
+      <legend>Checkboxes</legend>
+<!-- <label><input type="radio" name="food" value="pizza">Pizza</label> <br>
+<label><input type="radio" name="food" value="chips" checked>Chips</label> <br>
+<label><input type="radio" name="food" value="samosa"  >Samosa</label> <br>
+
+the radio button of the same name allow the user to select only  the one option 
+<label><input type="radio" name="gender" value="male" checked="true">Male</label> <br>
+<label><input type="radio" name="gender" value="female">Female</label> <br>
+<input type="s
+
+
+
+
+<label>SecondName: <input type="text" name="" id=""></label>
+<label>First Name: <input type="text" name="1name" id="1name"></label> <br>
+<label>Second Name: <input type="text" name="2name" id="2name"></label><br>
+
+<label for="yesNick">
+   NickName:
+</label>
+<input type="checkbox" name="yesNick" value="yes"  onchange="nickname()"><br>
+
+<div id="nick">
+<label>NickName: <input type="text" name="nickname" id="nickname"></label>
+</div>
+
+<input type="submit" value="verify">
+   </fieldset>
+</form>
+
+<script>
+                        // New input types
+// Fields for name, email,etc. are fairly straightForward
+// Additional forms fields you will want to look at include checkboxes and radiobuttons
+
+                        // Checkboxes
+// Typically shaped as squares
+// Allow the user to select options with a single click
+// OPtions share a single name
+               // Js - EasyCheckbox
+
+               // Radio Buttons
+// Typically shaped as circles
+// Just like checkboxes, radio buttons allow users an easy "click it" interface
+// However, radio buttons allow you to select one option per group
+
+                     // JavaScript
+// when Using JavaScript on checkboxes and radio buttons, the boolean expression is usually on the checked
+
+const nickname = () => {
+   if(document.getElementById('nickname').checked){
+      document.getElementById('nick').style.display="inline";
+      document.getElementById('nickname').setAttribute('required',true);
+   }
+   else{
+      document.getElementById('nickname').removeAttribute('required');
+      document.getElementById('nick').style.display="none";
+   }
+}
+
+
+
+</script>
+

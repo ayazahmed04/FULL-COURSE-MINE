@@ -1,0 +1,73 @@
+<body>
+   
+   <h1 id="heading">This  is the heading</h1>
+<a href="#">Home</a>   
+<img src="img.logo.png" alt="img not found">
+<script>
+   //Functions
+// Functions are bits of codes that you can reuse
+// Functions have a special syntax
+// function functionName (parameters){
+// code we want to run
+// }
+
+// function Declaration
+// msg = "this is the new learning of the javascript";
+// function welcomeMsg(name)  {
+//    alert(msg);
+//    console.log(msg);
+//    document.write('this is the new msg')
+// }
+// const aim = () => {
+//    name =     'Ayaz';
+//    // continue;
+//    // document.write(name);
+//    document.getElementById('heading').innerHTML =name;
+//    console.log("now the function is executes and it's the best way of nowing the function");
+//    // document.getElementsByTagName('a').innerHTML = "tagName";   
+// }
+
+
+//                      // Function Call
+//    // Declaring a function doesn'y actual do anything 
+//    // you need to call a function
+//    // Calling a function changes the program flow
+//    function   welcomeMsg(msg){
+//       alert(msg);
+//    }
+   
+//        let aa  = "hello ";
+//       welcomeMsg(aa);
+//       aa = "Goodbye";// welcomeMsg(a) this is in the browser
+//       welcomeMsg(aa);
+
+                     // Parameters 
+   // Sometimes function need some information in order to perform its function
+   // The name fo the parameters are not important, as long as you are consistent
+
+
+                     // Return Values
+   // Some function return values
+   // These values can be used in assignment statement or conditional expression
+            // e.g., 
+            //   welcomeMsgg = "you are in the new type of the function";
+            // let firstName = welcomeMsgg("Hi");
+
+   function welcomeMsg(msg) {
+      alert(msg);
+      let name = prompt("what is your name");
+      return name;
+   }
+// let firstName = welcomeMsg("hi");
+let newName = welcomeMsg();
+document.write(newName);
+
+
+         // whenever possible, use built in functions
+         // when you need to write your own function, try not to be too specific
+         // Function parameters can have any name 
+         
+
+
+</script>
+</body>

@@ -1,0 +1,80 @@
+                                    <!-- TRansition -->
+    <!-- > When elements transition from one state to another, you can alter their appearance -->
+            <!-- If you Hover over the link, chage the color -->
+            <!-- If an image comes into focus, change the size -->
+
+
+                                    <!-- the properties -->
+    <!-- >Transition-property -->
+            <!-- What is it you want to change? (size, color, position, etc.) -->
+    <!-- Transition-duration -->
+            <!-- How long should each transition last? -->
+    <!-- > Transition-timing -->
+            <!-- Should it be a smooth transition(linear)? Or Different? -->
+    <!-- > Transition delay -->
+            <!-- > how long should the wait be before the transitioon begin? -->
+    
+
+                                    <!-- Setting up -->
+    <!-- Define your element -->
+    <!-- choose the elements for transition -->
+    <!-- Define the new values-->
+        <!-- --YOu must combine this step with a pseudo-class -->
+    
+            
+                                    <!-- Using Shorthand -->
+    <!-- If you have multiple properties transitioning, you can use shorthand: -->
+         <!-- transition: background .2s linear, barder-radius 1s ease-in 1s; -->
+
+                                    <!-- Review -->
+    <!-- Transitions can be used to create fun   aspects to your page  -->
+    <!-- >playing with them help you better understand  elements states(active,focus,etc.) -->
+    <!-- Accessibility, as always, is an issue -->
+    
+
+    <style>
+        div{
+            color: #000000;
+            background: #2bd34a;
+            line-height: 200px;
+            text-align: center;
+            width: 250px;
+            height: 200px;
+            border-radius: 6px;
+    transition-property: color, width, background,border-radius;
+    transition-duration: .5s;
+    transition-timing-function:ease;
+    transition-delay: .5s;
+        }
+    div:hover{
+        color: #ffffff;
+        /* width: 350px;
+        background: #2D21B3;
+        border-radius: 50%; */
+        
+    }
+    div:active{
+color: rosybrown;
+        width: 150px;
+        background: #00ddb3;
+        transform: perspective(300px) rotate3d(50,50,50 , 20deg);
+        transform: perspective(300px) translate3d(50px , 0px, 040px);
+
+    }
+    </style>
+
+    <div>This is transition </div>
+
+    <script>
+        let div = document.querySelector('div');
+        console.log(div);
+
+        div.addEventListener('click', () => {
+        document.querySelector('div').innerHTML = "you are click";        
+        })
+        div.addEventListener("mouseleave",() => {
+            document.querySelector('div').innerHTML = "This is a transition";
+        })
+
+
+    </script>

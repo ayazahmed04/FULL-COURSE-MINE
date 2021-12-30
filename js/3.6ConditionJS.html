@@ -1,0 +1,51 @@
+<script>
+                     // Complex Boolean Situation 
+   // What if you need to check for two conditions?
+   // What if one condition depends upon the value of another?
+   
+                        // Nested if statements
+   // it is possible to "nest " statements
+   // put one statement inside another-different from part of the  same blocks
+   let ind=[2,3,5,6], x = 8;
+   
+   
+   if (ind.length===4) {
+      console.log("you have the four errors");// this is always executes when value is true 
+      if (x===8) {
+         console.log("this is execute if both are true");// this is only executes when both values are true
+      }
+   }
+                        // Please , Please, Please
+   // Careful planing is key ot making sure you get the desired results
+
+                        // What about else statement
+   // An else statement always matches the most recent open if statement
+   // Indentation has nothing to do with it 
+
+
+
+   let name = prompt("what is your name");
+   // if(name.length !=0){
+   //    if (name = "iiii" )
+   //       document.write("what a beautifull name");
+   //       else 
+   //          document.write(`hello ${name}`);
+   // }
+   // else {
+   //    document.write("feeling shy?");
+   // }
+
+if (name.length!=0 && name =="Sehran" || name == "Ayaz") {
+   document.write("what a beautifull Name");
+}
+ else if (name.length!=0  && name != "Ayaz") {
+   document.write(`hello ${name}`);
+}
+ else if (name.length==0){
+   document.write("feeling shy");
+}
+
+
+
+</script>
+

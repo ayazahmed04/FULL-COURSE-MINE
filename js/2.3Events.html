@@ -1,0 +1,73 @@
+<body onload="message('LOAD')" onresize="message('RESIZE')"> 
+
+   <h1>JavaScript Date function</h1>
+   <p id="demo">This is a paragraph.</p>
+
+   <!-- displayDate() events is at here -->
+   <button type="button" onclick="displayDate()">Display Date</button>
+   <!-- load Events => have in the browser -->
+   <h1>JavaScript Events - Responding to Events </h1>
+   <p onclick="message('CLICK')">It is possible to call the function based on Events </p>
+   <p>Click on the paragraph above to trigger on <strong>onclick</strong>events. Reload the page to see onload events </p>
+   <h1 id="output"></h1>
+
+<script>
+                        // Adding the interactivity!!
+//   It has been up to us to decide when the functions shouls executes
+// it would be better if the functions were called bassed on special "events";
+// The javaScript API lats us add dynamic function Calls 
+
+                  // Events
+// onclick
+//  > User clicks on an HTML element
+// onmouseover 
+// > user moves the mouse over an HTML element
+// onresize
+// > browser window is resized
+// onload
+// > browser finishes loading page
+
+
+                  // How it works
+// Any element can react to an event.
+// You need to add the event to the tag and include what you want to happen
+// e.g.,
+/*
+const message = () => {
+   prompt("what is your name")
+}
+*/ 
+// you can use single or the double quotes for the event result
+// Double quotes make it easier if you want to pass String parameters
+// Be carefull by copied and past the quotes
+function message(msg) {
+   document.getElementById('output').innerHTML = `${msg} events is being loading`;
+   // prompt("the event is fire")
+}
+
+function displayDate() {
+   // document.getElementById("demo").innerHTML=Date();
+   document.getElementById("demo").innerHTML=Location();
+}
+
+               // Events Change the Program Flow
+   // some programs ran in a linear order (step-by-step)
+   // Events cause the  program to "run continuously" since the DOM is always listening for events 
+   
+               // More Events
+   // MOuse Events 
+      // onclick, ondblclick, onmousedown, onmouseenter, onmouseleave, onmousemove, onmouseout,...
+   // Keyboard Events
+      // onkeydown, onkeypress , onkeyup
+   // Frame Events
+      //  onload, onresize, onscroll, onerror,...
+   // comprehensive list:
+      // go to mozilla network and search events
+   
+                  // Review 
+   //  without the events, JavaScript would be limited in ability to interact the DOM
+   // Events are cool....they are also annoying 
+   // Don't worry about memorizing the different events. As the need arises, look them up
+   
+</script>
+</body>

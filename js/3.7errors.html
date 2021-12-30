@@ -1,0 +1,50 @@
+<script>
+                     // Syntactic Errors 
+   // These errors break the "rules" of JavaScript
+      // Typed something wrong: getElementsById();
+      // forgot to close a curly backet: {....
+      // Using an undefined variable
+   // these errors will appear in the browser console if you are on  a laptop/desktop
+         // Unfortunately isn't avialable in the mobile 
+
+
+                        // LOgical Errors
+   // Your  code is valid, but there is something wrong with your thought process
+         // > In the Array Average example you didn't check for zero or you used the length of the array instead of a count
+   // Some "logic" errors really are typos they are just typos that run
+
+                        // Issues with comparisons
+   // Don't forget 
+         // 5=='5'  is true
+   // if (name="yazi") want to assign a value not check for equality
+   // (age > 65) && (18>age) will Never BE true
+   // (age>65) && (age<18) is silly, you only need to check the second condition
+
+
+                           // concentration va Addittion 
+   // The + operator perforn different actions based on the type...
+// 5+5 => 10
+// '5' + '5' => '55'
+// 5 + '5'  => "55"
+         // This isn't always bad!! Sometimes you want to concatente a string and a variable
+            // src= "url("+ img.src +")";
+            let name=  ["ayaz",344,553,"sehran"];
+
+            let z = "2("+ name +")";
+            console.log(z);
+      
+                           // Issues with Nesting 
+   // Make sure that your else statements match with the appropriate   if 
+   // Make sure  you don't end your flow of control by misplacing semicolons;
+   // if(name.length>4){
+   //    alert("you are in the bad condition")
+   // }
+
+   for (let i = 3; i < name.length; i++) {// if i=3 if prints only last value
+      const yazi = name[i];
+      document.write(yazi)
+   }
+
+   // think your code before you will have to be write it
+   // code and test , code and test , and saving 
+</script>

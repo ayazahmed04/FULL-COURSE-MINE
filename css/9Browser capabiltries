@@ -1,0 +1,23 @@
+        //// Handling unsupported properties
+    > Not all browser support all HTML5 tags 
+    > Not all browsers support all CSS3 properties
+    >Browser prefixes (or vendor prefixes) provide a quick fix for handling 
+
+            /*Browser Prefixes */
+    chrome   => -webkit-:  >> for all the google browser IOS, Safari< Andriod
+    Opera    => -o-
+    mozilla   => -moz
+    Internet Explorer => -ms-:
+
+
+            /*Often Unsupported Properties*/
+    => column-count
+    => border-radius
+    => gradient
+    => Sites such as http://caniuse.com/ will tell you when you need to use prefixes 
+
+
+     
+
+            /*Examples*/
+    
